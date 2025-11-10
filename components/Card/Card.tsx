@@ -1,4 +1,7 @@
+"use client";
+
 import Button from "../Button/Button";
+import Image from "next/image";
 import styles from "./Card.module.css";
 
 interface CardProps {
@@ -12,6 +15,8 @@ interface CardProps {
 interface StackItem {
   name: string;
   symbol: string;
+  // If symbol isnt showing up, it might be an issue of
+  // how it is defined here - try symbol: React.ReactNode;
 }
 
 const Card = ({ title, desc, stack, demoBtn, viewBtn }: CardProps) => {
@@ -24,7 +29,7 @@ const Card = ({ title, desc, stack, demoBtn, viewBtn }: CardProps) => {
         <div className={styles.stackContainer}>
           {stack.map((option, index) => (
             <div className={styles.stackItem} key={index}>
-              <img src={option.symbol} alt="icon"></img>
+              <Image src={option.symbol} alt={option.name} />
               <div>{option.name}</div>
             </div>
           ))}

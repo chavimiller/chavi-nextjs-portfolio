@@ -1,13 +1,9 @@
+"use client";
+
 import Card from "../Card/Card";
 import { Element } from "react-scroll";
 
 import styles from "./Projects.module.css";
-
-import CssIcon from "../assets/icons/Css.svg";
-import HtmlIcon from "../assets/icons/Html.svg";
-import JSIcon from "../assets/icons/Javascript.svg";
-import WebpackIcon from "../assets/icons/Webpack.svg";
-import ReactIcon from "../assets/icons/React.svg";
 
 const Projects = () => {
   const projectList = [
@@ -16,8 +12,8 @@ const Projects = () => {
       title: "Shopping Cart",
       desc: "This shopping cart app was built with React. It shows a list of products from a mocked API, lets users add and remove items from the cart, and updates the cart’s contents and total price in real time. It also has navigation between a homepage, shop page, and cart page using React Router.",
       stack: [
-        { name: "React", symbol: ReactIcon },
-        { name: "CSS", symbol: CssIcon },
+        { name: "React", symbol: "/images/React.svg" },
+        { name: "CSS", symbol: "/images/Css.svg" },
       ],
       demoLink: "https://coffee-website-cart.vercel.app/",
       codeLink: "https://github.com/chavimiller/shopping-cart",
@@ -27,9 +23,9 @@ const Projects = () => {
       title: "Calculator",
       desc: "This simple calculator app was built using JavaScript and lets you perform basic math operations like addition, subtraction, multiplication, and division. It handles decimals, clearing, deleting digits, and updates the display in real time as you click.",
       stack: [
-        { name: "JavaScript", symbol: JSIcon },
-        { name: "HTML", symbol: HtmlIcon },
-        { name: "CSS", symbol: CssIcon },
+        { name: "JavaScript", symbol: "/images/Javascript.svg" },
+        { name: "HTML", symbol: "/images/Html.svg" },
+        { name: "CSS", symbol: "/images/Css.svg" },
       ],
       demoLink: "https://chavimiller.github.io/calculator-project/",
       codeLink: "https://github.com/chavimiller/calculator-project",
@@ -40,10 +36,10 @@ const Projects = () => {
       title: "Weather App",
       desc: "This app was built with JavaScript, HTML, and CSS, using a modular approach to keep the code clean and components separate. It fetches real-time weather data from an external API, allowing users to search for any city and view current temperature, weather conditions, and other details.",
       stack: [
-        { name: "JavaScript", symbol: JSIcon },
-        { name: "HTML", symbol: HtmlIcon },
-        { name: "CSS", symbol: CssIcon },
-        { name: "Webpack", symbol: WebpackIcon },
+        { name: "JavaScript", symbol: "/images/Javascript.svg" },
+        { name: "HTML", symbol: "/images/Html.svg" },
+        { name: "CSS", symbol: "/images/Css.svg" },
+        { name: "Webpack", symbol: "/images/Webpack.svg" },
       ],
       demoLink: "https://chavimiller.github.io/weather-app/",
       codeLink: "https://github.com/chavimiller/weather-app",
@@ -53,10 +49,10 @@ const Projects = () => {
       title: "To-Do List",
       desc: "This to-do list app is divided into modules to make the code easier to follow and maintain. It demonstrates handling events, updating the interface dynamically, manipulating the DOM, and saving tasks to local storage so they remain after page refreshes.",
       stack: [
-        { name: "JavaScript", symbol: JSIcon },
-        { name: "HTML", symbol: HtmlIcon },
-        { name: "CSS", symbol: CssIcon },
-        { name: "Webpack", symbol: WebpackIcon },
+        { name: "JavaScript", symbol: "/images/Javascript.svg" },
+        { name: "HTML", symbol: "/images/Html.svg" },
+        { name: "CSS", symbol: "/images/Css.svg" },
+        { name: "Webpack", symbol: "/images/Webpack.svg" },
       ],
       demoLink: "https://chavimiller.github.io/to-do-list/",
       codeLink: "https://github.com/chavimiller/to-do-list",

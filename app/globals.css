@@ -11,17 +11,17 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./fonts/Montserrat.ttf");
+  src: url("/fonts/Montserrat.ttf");
 }
 
 @font-face {
   font-family: "MontserratItalic";
-  src: url("./fonts/MontserratItalic.ttf");
+  src: url("/fonts/MontserratItalic.ttf");
 }
 
 @font-face {
   font-family: "Yanone";
-  src: url("./fonts/Yanone.ttf");
+  src: url("/fonts/Yanone.ttf");
 }
 
 html,

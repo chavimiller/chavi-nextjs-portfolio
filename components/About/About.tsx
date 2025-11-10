@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "../Button/Button";
 import { Link, Element } from "react-scroll";
 

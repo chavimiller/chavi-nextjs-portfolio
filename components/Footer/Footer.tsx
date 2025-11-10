@@ -1,3 +1,5 @@
+"use client";
+
 import { Element } from "react-scroll";
 import styles from "./Footer.module.css";
 
