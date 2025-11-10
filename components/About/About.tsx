@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "../Button/Button";
 import { Link, Element } from "react-scroll";
 
 import styles from "./About.module.css";

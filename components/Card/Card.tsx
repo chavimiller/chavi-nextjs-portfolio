@@ -1,7 +1,20 @@
-import Button from "./Button";
+import Button from "../Button/Button";
 import styles from "./Card.module.css";
 
-const Card = ({ title, desc, stack, demoBtn, viewBtn }) => {
+interface CardProps {
+  title: string;
+  desc: string;
+  stack: StackItem[];
+  demoBtn: () => void;
+  viewBtn: () => void;
+}
+
+interface StackItem {
+  name: string;
+  symbol: string;
+}
+
+const Card = ({ title, desc, stack, demoBtn, viewBtn }: CardProps) => {
   return (
     <>
       <div className={styles.cardContainer}>

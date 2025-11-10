@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "../Card/Card";
 import { Element } from "react-scroll";
 
 import styles from "./Projects.module.css";
@@ -63,7 +63,7 @@ const Projects = () => {
     },
   ];
 
-  const openLink = (link) => {
+  const openLink = (link: string) => {
     window.open(link, "_blank");
   };
 
