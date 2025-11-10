@@ -25,12 +25,6 @@
   flex-wrap: wrap;
 }
 
-.stackContainer img {
-  width: 40px;
-  height: 40px;
-  
-}
-
 .stackItem {
   display: flex;
   align-items: center;

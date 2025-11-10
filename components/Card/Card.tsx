@@ -29,7 +29,12 @@ const Card = ({ title, desc, stack, demoBtn, viewBtn }: CardProps) => {
         <div className={styles.stackContainer}>
           {stack.map((option, index) => (
             <div className={styles.stackItem} key={index}>
-              <Image src={option.symbol} alt={option.name} />
+              <Image
+                src={option.symbol}
+                alt={option.name}
+                width={40}
+                height={40}
+              />
               <div>{option.name}</div>
             </div>
           ))}
