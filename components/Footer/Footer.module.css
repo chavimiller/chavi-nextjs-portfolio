@@ -1,0 +1,66 @@
+
+.contactContainer {
+  display: flex;
+  background-color: var(--foreground);
+  height: fit-content;
+  padding: 2rem 0;
+  color: var(--background);
+  align-items: center;
+}
+
+.twoColumns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contactLS {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contactName {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.contactEmail {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.contactRS {
+  display: flex;
+  gap: 2.4rem;
+}
+
+@media (max-width: 480px) {
+
+    .contactContainer {
+        height: fit-content;
+    }
+
+    .twoColumns {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+    }
+    .contactLS {
+        gap: .5rem;
+        text-align: center;
+    }
+
+    .contactName {
+        font-size: 1.4rem;
+    }
+
+    .contactEmail {
+        font-size: 1rem;
+    }
+
+    .contactRS svg {
+        width: 60px;
+        height: 60px;
+    }
+}
