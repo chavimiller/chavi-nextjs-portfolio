@@ -5,7 +5,7 @@ import styles from "./NavBar.module.css";
 
 const NavBar = () => {
   return (
-    <div className={`container ${styles.navbarContainer}`}>
+    <nav className={`container ${styles.navbarContainer}`}>
       <Link to="aboutSection" smooth={true} duration={800}>
         <div>ABOUT</div>
       </Link>
@@ -15,7 +15,7 @@ const NavBar = () => {
       <Link to="contact" smooth={true} duration={800}>
         <div>CONTACT</div>
       </Link>
-    </div>
+    </nav>
   );
 };
 

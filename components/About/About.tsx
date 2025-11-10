@@ -8,24 +8,24 @@ import styles from "./About.module.css";
 const About = () => {
   return (
     <>
-      <div className="container section">
+      <header className="container section">
         <div className={styles.introContainer}>
           <div className={styles.regText}>Hi, my name is</div>
           <h1 className={styles.title}>Chavi Weisman-Miller</h1>
 
-          <div className={styles.regText}>
+          <p className={styles.regText}>
             Finance graduate turned Front-End Developer, learning and building
             modern web applications with React
-          </div>
+          </p>
           <Link to="aboutMeSection" smooth={true} duration={500}>
             <Button text={"About me"} style={"btn btn-1"} />
           </Link>
         </div>
-      </div>
+      </header>
       <Element name="aboutMeSection">
         <div className={styles.aboutSection}>
           <div className="section container">
-            <div className={styles.aboutMeTitle}>About Me</div>
+            <h2 className={styles.aboutMeTitle}>About Me</h2>
             <p className={styles.aboutMeText}>
               After earning my degree in Finance at the University of Maryland
               and moving to Israel, I expected to find a career in the financial

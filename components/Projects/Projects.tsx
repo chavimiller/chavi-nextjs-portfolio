@@ -68,7 +68,7 @@ const Projects = () => {
       <Element name="portfolio">
         <div className={styles.projectSection}>
           <div className="section container">
-            <div className={styles.projectsHeading}>Projects</div>
+            <h2 className={styles.projectsHeading}>Projects</h2>
             {projectList.map((project, index) => (
               <div key={project.key}>
                 <Card

@@ -11,10 +11,10 @@ const Footer = () => {
   return (
     <>
       <Element name="contact">
-        <div className={styles.contactContainer}>
+        <footer className={styles.contactContainer}>
           <div className={`section container ${styles.twoColumns}`}>
             <div className={styles.contactLS}>
-              <div className={styles.contactName}>Chavi Weisman-Miller</div>
+              <h2 className={styles.contactName}>Chavi Weisman-Miller</h2>
               <div className={styles.contactEmail}>{email}</div>
             </div>
             <div className={styles.contactRS}>
@@ -51,7 +51,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </footer>
       </Element>
     </>
   );

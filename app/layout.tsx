@@ -16,6 +16,17 @@ export const metadata: Metadata = {
   title: "Chavi Weisman | Front-End Developer Portfolio",
   description:
     "Portfolio of Chavi Weisman-Miller, a front-end developer specializing in React, TypeScript, and modern web design. Explore featured projects built with JavaScript, React, Next.js, and responsive UI techniques.",
+  keywords: [
+    "Chavi Weisman",
+    "Chavi Weisman-Miller",
+    "Front-End Developer",
+    "React Developer",
+    "Next.js Portfolio",
+    "TypeScript Developer",
+    "Jerusalem Developer",
+    "Israel Developer",
+    "Web Development Portfolio",
+  ],
 };
 
 export default function RootLayout({
