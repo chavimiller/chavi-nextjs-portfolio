@@ -1,26 +1,130 @@
-@import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #EFEBCE;
+  --foreground: #A3A380;
+  --secondary-green: #D6CE93;
+  --secondary-pink:#D8A48F;
+  --accent: #BB8588; 
+  --max-content-width: 1280px;
+  --page-padding: 2rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat.ttf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "MontserratItalic";
+  src: url("./fonts/MontserratItalic.ttf");
 }
 
+@font-face {
+  font-family: "Yanone";
+  src: url("./fonts/Yanone.ttf");
+}
+
+html,
 body {
-  background: var(--background);
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+}
+
+svg {
+  height: 70px;
+  width: 70px;
+}
+
+.container {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 var(--page-padding);
+}
+
+.section {
+  padding: 2rem 10rem;
+}
+
+.btn {
+  background-color: transparent;
+  display: flex;
+  padding: .7rem 2rem;
+  width: fit-content;
+  border: solid 3px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  border-radius: .2rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.btn-1 {
+  color: var(--secondary-pink);
+  border-color: var(--secondary-pink); 
+}
+
+.btn-2 {
+  color: var(--secondary-green);
+  border-color: var(--secondary-green);  
+}
+
+.btn-3 {
+  padding: .5rem 2rem;
+  border: solid 2px;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: var(--secondary-green);
+  border-color: var(--secondary-green);  
+}
+
+.btn-4 {
+  color: var(--secondary-pink);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn, .btn-3, .btn-4 {
+  transition: transform 0.2s ease;
+}
+
+.btn:hover, .btn-3:hover, .btn-4:hover {
+  transform: translateY(-3px);
+}
+
+.btn:active, .btn-3:active, .btn-4:active {
+  transform: translateY(0) scale(0.97); 
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem;
+  }
+
+  .container {
+    max-width: 100%;
+  } 
+}
+
+@media (max-width: 480px) {
+ .section {
+    padding: 1.5rem;
+  }
+
+  .container {
+    max-width: 100%;
+  } 
 }
