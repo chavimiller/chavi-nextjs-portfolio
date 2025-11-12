@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     "Israel Developer",
     "Web Development Portfolio",
   ],
+  other: {
+    "google-site-verification": "GXly2om0e666ETp7UYVPx7BoBzwBzMflGFccFXXQATk",
+  },
 };
 
 export default function RootLayout({

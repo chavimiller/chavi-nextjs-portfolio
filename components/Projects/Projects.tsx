@@ -8,6 +8,17 @@ import styles from "./Projects.module.css";
 const Projects = () => {
   const projectList = [
     {
+      key: 5,
+      title: "My Portfolio Website",
+      desc: "My personal portfolio website, developed to showcase my front-end projects and growth as a developer. It was first built in React, then migrated to Next.js and TypeScript to take advantage of server-side rendering, better routing, and SEO optimization. It features a responsive design built with CSS Modules, smooth navigation, and a focus on performance and maintainability.",
+      stack: [
+        { name: "Next.js", symbol: "/images/Nextjs.svg" },
+        { name: "TypeScript", symbol: "/images/Typescript.svg" },
+      ],
+      demoLink: "/",
+      codeLink: "https://github.com/chavimiller/chavi-nextjs-portfolio",
+    },
+    {
       key: 1,
       title: "Shopping Cart",
       desc: "This shopping cart app was built with React. It shows a list of products from a mocked API, lets users add and remove items from the cart, and updates the cart's contents and total price in real time. It also has navigation between a homepage, shop page, and cart page using React Router.",
@@ -76,8 +87,8 @@ const Projects = () => {
                   title={project.title}
                   desc={project.desc}
                   stack={project.stack}
-                  demoBtn={() => openLink(project.demoLink)}
-                  viewBtn={() => openLink(project.codeLink)}
+                  demoBtn={() => project.demoLink && openLink(project.demoLink)}
+                  viewBtn={() => project.codeLink && openLink(project.codeLink)}
                 />
                 {index !== projectList.length - 1 && <hr />}
               </div>
