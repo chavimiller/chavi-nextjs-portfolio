@@ -28,13 +28,13 @@ const About = () => {
             <h2 className={styles.aboutMeTitle}>About Me</h2>
             <p className={styles.aboutMeText}>
               After earning my degree in Finance at the University of Maryland
-              and moving to Israel, I expected to find a career in the financial
-              world. Instead, I found myself drawn to web programming - the
-              creativity, the methodical thinking, and the satisfaction of
-              problem solving. The aspects that interested me in finance -
-              finding patterns, keeping things organized, and focusing on
-              details - are the same qualities that drew me to coding and help
-              me in writing clear, organized code.
+              Robert H. Smith School of Business and moving to Israel, I
+              expected to find a career in the financial world. Instead, I found
+              myself drawn to web programming - the creativity, the methodical
+              thinking, and the satisfaction of problem solving. The aspects
+              that interested me in finance - finding patterns, keeping things
+              organized, and focusing on details - are the same qualities that
+              drew me to coding and help me in writing clear, organized code.
             </p>
             <p className={styles.aboutMeText}>
               Since then, I've been focused on learning web development and
