@@ -21,7 +21,7 @@ const Projects = () => {
     {
       key: 1,
       title: "Shopping Cart",
-      desc: "This shopping cart app was built with React. It shows a list of products from a mocked API, lets users add and remove items from the cart, and updates the cart's contents and total price in real time. It also has navigation between a homepage, shop page, and cart page using React Router.",
+      desc: "This shopping cart app was built with React. It shows a list of products from a mocked API, lets users add and remove items from the cart, and updates the cart's contents and total price in real time. It also handles navigation between a homepage, shop page, and cart page using React Router.",
       stack: [
         { name: "React", symbol: "/images/React.svg" },
         { name: "CSS", symbol: "/images/Css.svg" },
