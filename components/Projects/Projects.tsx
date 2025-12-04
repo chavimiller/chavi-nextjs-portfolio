@@ -29,45 +29,6 @@ const Projects = () => {
       demoLink: "https://coffee-website-cart.vercel.app/",
       codeLink: "https://github.com/chavimiller/shopping-cart",
     },
-    {
-      key: 2,
-      title: "Calculator",
-      desc: "This simple, responsive calculator app was built using JavaScript and lets you perform basic math operations like addition, subtraction, multiplication, and division. It handles decimals, clearing, deleting digits, and updates the display in real time as you click.",
-      stack: [
-        { name: "JavaScript", symbol: "/images/Javascript.svg" },
-        { name: "HTML", symbol: "/images/Html.svg" },
-        { name: "CSS", symbol: "/images/Css.svg" },
-      ],
-      demoLink: "https://chavimiller.github.io/calculator-project/",
-      codeLink: "https://github.com/chavimiller/calculator-project",
-    },
-
-    {
-      key: 3,
-      title: "Weather App",
-      desc: "This app was built with JavaScript, HTML, and CSS, using a modular approach to keep the code clean and components separate. It fetches real-time weather data from an external API, allowing users to search for any city and view current temperature, weather conditions, and other details. Currently it has basic responsiveness and being migrated into a React project.",
-      stack: [
-        { name: "JavaScript", symbol: "/images/Javascript.svg" },
-        { name: "HTML", symbol: "/images/Html.svg" },
-        { name: "CSS", symbol: "/images/Css.svg" },
-        { name: "Webpack", symbol: "/images/Webpack.svg" },
-      ],
-      demoLink: "https://chavimiller.github.io/weather-app/",
-      codeLink: "https://github.com/chavimiller/weather-app",
-    },
-    {
-      key: 4,
-      title: "To-Do List",
-      desc: "Currently only available for desktop-view, this to-do list app is divided into modules to make the code easier to follow and maintain. It demonstrates handling events, updating the interface dynamically, manipulating the DOM, and saving tasks to local storage so they remain after page refreshes.",
-      stack: [
-        { name: "JavaScript", symbol: "/images/Javascript.svg" },
-        { name: "HTML", symbol: "/images/Html.svg" },
-        { name: "CSS", symbol: "/images/Css.svg" },
-        { name: "Webpack", symbol: "/images/Webpack.svg" },
-      ],
-      demoLink: "https://chavimiller.github.io/to-do-list/",
-      codeLink: "https://github.com/chavimiller/to-do-list",
-    },
   ];
 
   const openLink = (link: string) => {
