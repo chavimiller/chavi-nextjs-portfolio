@@ -4,9 +4,21 @@ import Card from "../Card/Card";
 import { Element } from "react-scroll";
 
 import styles from "./Projects.module.css";
+import { title } from "process";
 
 const Projects = () => {
   const projectList = [
+    {
+      key: 3,
+      title: "Members Only Message Board",
+      desc: "A back-end app built with Express.js and PostgreSQL that allows users to sign up, log in, and post messages to a members-only message board. User authentication is handled with Passport.js, and passwords are securely stored using encryption. By entering a secret code, users can become members or admins, gaining different permissions: non-members see posts anonymously, members can view authors and timestamps of posts, and admins can delete any messages.",
+      stack: [
+        { name: "Express.js", symbol: "./images/Express.svg" },
+        { name: "PostgreSQL", symbol: "./images/Psql.svg" },
+      ],
+      demoLink: "https://uncomfortable-carole-chaviweisman-dec8d0ab.koyeb.app/",
+      codeLink: "https://github.com/chavimiller/members-only",
+    },
     {
       key: 5,
       title: "My Portfolio Website",
