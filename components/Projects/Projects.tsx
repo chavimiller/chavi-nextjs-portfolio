@@ -15,7 +15,8 @@ const Projects = () => {
         { name: "Express.js", symbol: "./images/Express.svg" },
         { name: "PostgreSQL", symbol: "./images/Psql.svg" },
       ],
-      demoLink: "https://uncomfortable-carole-chaviweisman-dec8d0ab.koyeb.app/",
+      demoLink:
+        "https://members-only-production-0d99.up.railway.app/auth/signup",
       codeLink: "https://github.com/chavimiller/members-only",
     },
     {
